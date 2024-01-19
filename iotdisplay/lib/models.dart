@@ -2,13 +2,15 @@ import 'dart:convert';
 
 class SensorRegister {
   final int registroId;
-  final String fechayHora;
+  final String fecha;
+  final String hora;
   final int medida;
   final String comentario;
 
   SensorRegister({
     required this.registroId,
-    required this.fechayHora,
+    required this.fecha,
+    required this.hora,
     required this.medida,
     required this.comentario,
   });
@@ -16,7 +18,8 @@ class SensorRegister {
   factory SensorRegister.fromJson(Map<String, dynamic> json) {
     return SensorRegister(
       registroId: json['RegistroId'],
-      fechayHora: json['FechayHora'],
+      fecha: json['Fecha'],
+      hora: json['Hora'],
       medida: json['medida'],
       comentario: json['comentario'],
     );

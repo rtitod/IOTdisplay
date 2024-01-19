@@ -52,7 +52,8 @@ class _MyHomePageState extends State<ScrollPage> {
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Fecha y Hora: ${sensorRegister.fechayHora}'),
+                        Text('Fecha: ${sensorRegister.fecha}'),
+                        Text('Hora: ${sensorRegister.hora}'),
                         Text('Medida: ${sensorRegister.medida}'),
                         Text('Comentario: ${sensorRegister.comentario}'),
                       ],
